@@ -4,10 +4,11 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Collection Page 4 | Abdullah Psychotic</title>
+<title>Collection | Abdullah Psychotic</title>
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
 <link href="https://fonts.googleapis.com/css2?family=Allura&family=Cinzel:wght@400;500;600;700&family=Montserrat:wght@300;400;500;600;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
@@ -21,15 +22,9 @@
   --accent:#a8040f;
 }
 
-*{
-  box-sizing:border-box;
-  margin:0;
-  padding:0;
-}
+*{box-sizing:border-box;margin:0;padding:0}
 
-html{
-  scroll-behavior:smooth;
-}
+html{scroll-behavior:smooth}
 
 body{
   background:var(--bg);
@@ -38,12 +33,8 @@ body{
   overflow-x:hidden;
 }
 
-a{
-  color:inherit;
-  text-decoration:none;
-}
+a{color:inherit;text-decoration:none}
 
-/* PAGE */
 .collection-page{
   width:min(1400px,100%);
   margin:auto;
@@ -169,7 +160,7 @@ a{
   background:#fff;
 }
 
-/* INTRO */
+/* SMALL INTRO */
 .collection-intro{
   margin-bottom:24px;
   text-align:left;
@@ -222,20 +213,12 @@ a{
   pointer-events:none;
 }
 
-.collection-card a{
-  display:block;
-  width:100%;
-  height:100%;
-}
-
 .collection-card img{
   width:100%;
   height:100%;
   display:block;
   object-fit:cover;
-  transition:
-    transform .7s cubic-bezier(.2,.7,.2,1),
-    filter .5s ease;
+  transition:transform .7s cubic-bezier(.2,.7,.2,1),filter .5s ease;
 }
 
 .collection-card:hover img{
@@ -248,13 +231,12 @@ a{
   z-index:3;
   top:12px;
   left:12px;
-  min-width:40px;
+  width:31px;
   height:31px;
-  padding:0 7px;
   display:flex;
   align-items:center;
   justify-content:center;
-  border-radius:20px;
+  border-radius:50%;
   background:rgba(0,0,0,.48);
   border:1px solid rgba(255,255,255,.2);
   backdrop-filter:blur(8px);
@@ -299,9 +281,7 @@ a{
   opacity:.82;
 }
 
-.card-link i{
-  font-size:8px;
-}
+.card-link i{font-size:8px}
 
 /* PAGINATION */
 .pagination{
@@ -316,9 +296,6 @@ a{
   min-width:38px;
   height:38px;
   padding:0 12px;
-  display:flex;
-  align-items:center;
-  justify-content:center;
   border:1px solid var(--line);
   border-radius:10px;
   background:#11110f;
@@ -337,7 +314,7 @@ a{
   border-color:#fff;
 }
 
-/* FOOTER */
+/* LOAD / COUNT */
 .collection-footer{
   display:flex;
   align-items:center;
@@ -352,78 +329,29 @@ a{
   text-transform:uppercase;
 }
 
-/* TABLET / MOBILE */
+/* MOBILE */
 @media(max-width:850px){
-
-  .collection-page{
-    padding:22px 12px 45px;
-  }
-
-  .collection-head{
-    margin-top:10px;
-    margin-bottom:25px;
-  }
-
-  .profile-link{
-    width:66px;
-    height:66px;
-  }
-
-  .profile-name{
-    font-size:20px;
-  }
-
-  .profile-subtitle{
-    font-size:8px;
-    letter-spacing:2.2px;
-  }
-
-  .follow-btn{
-    padding:11px 18px;
-    font-size:11px;
-  }
-
-  .collection-nav{
-    gap:25px;
-  }
-
-  .collection-nav button{
-    font-size:10px;
-  }
+  .collection-page{padding:22px 12px 45px}
+  .collection-head{margin-top:10px;margin-bottom:25px}
+  .profile-link{width:66px;height:66px}
+  .profile-name{font-size:20px}
+  .profile-subtitle{font-size:8px;letter-spacing:2.2px}
+  .follow-btn{padding:11px 18px;font-size:11px}
+  .collection-nav{gap:25px}
+  .collection-nav button{font-size:10px}
 
   .collection-grid{
     grid-template-columns:repeat(2,minmax(0,1fr));
     gap:8px;
   }
 
-  .collection-card{
-    border-radius:15px;
-  }
+  .collection-card{border-radius:15px}
+  .card-info{left:11px;bottom:11px}
+  .card-name{font-size:10px;letter-spacing:.8px}
+  .card-caption{font-size:7px;letter-spacing:.8px}
+  .card-link{font-size:7px;margin-top:5px}
 
-  .card-info{
-    left:11px;
-    bottom:11px;
-  }
-
-  .card-name{
-    font-size:10px;
-    letter-spacing:.8px;
-  }
-
-  .card-caption{
-    font-size:7px;
-    letter-spacing:.8px;
-  }
-
-  .card-link{
-    font-size:7px;
-    margin-top:5px;
-  }
-
-  .pagination{
-    margin-top:22px;
-    gap:6px;
-  }
+  .pagination{margin-top:22px;gap:6px}
 
   .pagination a{
     min-width:34px;
@@ -435,42 +363,19 @@ a{
   .card-number{
     top:8px;
     left:8px;
-    min-width:34px;
+    width:25px;
     height:25px;
-    padding:0 5px;
     font-size:7px;
   }
 }
 
 @media(max-width:430px){
-
-  .profile-actions{
-    display:none;
-  }
-
-  .profile-name{
-    font-size:19px;
-  }
-
-  .collection-grid{
-    gap:6px;
-  }
-
-  .collection-card{
-    border-radius:13px;
-  }
-
-  .collection-intro h1{
-    font-size:22px;
-  }
-
-  .collection-footer{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:8px;
-  }
+  .profile-actions{display:none}
+  .profile-name{font-size:19px}
+  .collection-grid{gap:6px}
+  .collection-card{border-radius:13px}
+  .collection-intro h1{font-size:22px}
 }
-
 </style>
 </head>
 
@@ -478,80 +383,48 @@ a{
 
 <main class="collection-page">
 
-  <!-- PROFILE HEADER -->
+  <!-- PROFILE / COLLECTION HEADER -->
   <header class="collection-head">
-
-    <a
-      class="profile-link"
-      href="https://forhad2008.github.io/Abdullah-psychotic/"
-      aria-label="Abdullah Psychotic home"
-    >
+    <a class="profile-link" href="https://forhad2008.github.io/Abdullah-psychotic/" aria-label="Abdullah Psychotic home">
       <img src="pro.webp" alt="Abdullah Psychotic">
     </a>
 
     <div class="profile-info">
       <div class="profile-name">
         <span>Abdullah Psychotic</span>
-        <span class="verified">
-          <i class="fas fa-check"></i>
-        </span>
+        <span class="verified"><i class="fas fa-check"></i></span>
       </div>
-
-      <div class="profile-subtitle">
-        Collection
-      </div>
+      <div class="profile-subtitle">Collection</div>
     </div>
 
     <div class="profile-actions">
-      <button class="follow-btn" id="followBtn">
-        Follow
-      </button>
+      <button class="follow-btn" id="followBtn">Follow</button>
     </div>
-
   </header>
 
-  <!-- COLLECTION NAV -->
   <nav class="collection-nav" aria-label="Collection navigation">
     <button class="active" data-filter="all">Created</button>
     <button data-filter="saved">Popular</button>
   </nav>
 
-  <!-- INTRO -->
   <section class="collection-intro">
     <h1>THE FOURTH CHAPTER</h1>
-
     <p>
-      The fourth chapter of the Abdullah Psychotic archive —
-      experimental designs, rare silhouettes, rebellious fashion
-      and new creative visions.
+      A darker continuation of the Abdullah Psychotic archive — rare silhouettes,
+      rebellious essentials, luxury objects and experimental forms.
     </p>
   </section>
 
-  <!-- COLLECTION GRID -->
-  <section
-    id="collectionGrid"
-    class="collection-grid"
-    aria-label="Abdullah Psychotic collection"
-  ></section>
+  <!-- JAVASCRIPT CREATES ALL 33 IMAGE BOXES HERE -->
+  <section id="collectionGrid" class="collection-grid" aria-label="Abdullah Psychotic collection"></section>
 
-  <!-- PAGINATION: ONLY 1, 3, 4 -->
+  <!-- ONLY 1, 3 AND 4 BUTTONS -->
   <div class="pagination" aria-label="Collection pages">
-
-    <a href="https://forhad2008.github.io/Abdullah-psychotic-collections/">
-      1
-    </a>
-
-    <a href="https://forhad2008.github.io/Abdullah-psychotic-collections-3/">
-      3
-    </a>
-
-    <a href="index.html" class="active">
-      4
-    </a>
-
+    <a href="https://forhad2008.github.io/Abdullah-psychotic-collections/">1</a>
+    <a href="https://forhad2008.github.io/Abdullah-psychotic-collections-3/">3</a>
+    <a href="index.html" class="active">4</a>
   </div>
 
-  <!-- FOOTER -->
   <div class="collection-footer">
     <span id="collectionCount">33 designs · 101—133</span>
     <span>Abdullah Psychotic © 2026</span>
@@ -560,156 +433,320 @@ a{
 </main>
 
 <script>
-
 /*
 =========================================================
- ABDULLAH PSYCHOTIC — COLLECTION PAGE 4
+  ABDULLAH PSYCHOTIC — 33 COLLECTION ITEMS
 
- TOTAL DESIGNS: 33
+  PAGE 4 — IMAGES 101.webp TO 133.webp.
 
- IMAGE ORDER:
- 101.webp
- 102.webp
- 103.webp
- ...
- 133.webp
+  PRODUCT NAMES ARE KEPT AS INDIVIDUAL EDITABLE ITEMS.
 
- CARD NUMBERS:
- 101 TO 133
+  To change a product name:
+  name:"Your Product Name"
+
+  To change an image:
+  image:"your-image.webp"
+
+  To change the destination:
+  link:"product.html?id=your-product"
 =========================================================
 */
 
-const collectionItems = Array.from(
-  { length: 33 },
-  (_, index) => {
-
-    const number = index + 101;
-
-    return {
-      name: `Design ${number}`,
-      caption: "Abdullah Psychotic",
-      image: `${number}.webp`,
-      link: `${number}.webp`,
-      saved: true
-    };
-
+const collectionItems = [
+  {
+    name:"Product 101",
+    caption:"Abdullah Psychotic",
+    image:"101.webp",
+    link:"101.webp",
+    saved:true
+  },
+  {
+    name:"Product 102",
+    caption:"Abdullah Psychotic",
+    image:"102.webp",
+    link:"102.webp",
+    saved:true
+  },
+  {
+    name:"Product 103",
+    caption:"Abdullah Psychotic",
+    image:"103.webp",
+    link:"103.webp",
+    saved:true
+  },
+  {
+    name:"Product 104",
+    caption:"Abdullah Psychotic",
+    image:"104.webp",
+    link:"104.webp",
+    saved:true
+  },
+  {
+    name:"Product 105",
+    caption:"Abdullah Psychotic",
+    image:"105.webp",
+    link:"105.webp",
+    saved:true
+  },
+  {
+    name:"Product 106",
+    caption:"Abdullah Psychotic",
+    image:"106.webp",
+    link:"106.webp",
+    saved:true
+  },
+  {
+    name:"Product 107",
+    caption:"Abdullah Psychotic",
+    image:"107.webp",
+    link:"107.webp",
+    saved:true
+  },
+  {
+    name:"Product 108",
+    caption:"Abdullah Psychotic",
+    image:"108.webp",
+    link:"108.webp",
+    saved:true
+  },
+  {
+    name:"Product 109",
+    caption:"Abdullah Psychotic",
+    image:"109.webp",
+    link:"109.webp",
+    saved:true
+  },
+  {
+    name:"Product 110",
+    caption:"Abdullah Psychotic",
+    image:"110.webp",
+    link:"110.webp",
+    saved:true
+  },
+  {
+    name:"Product 111",
+    caption:"Abdullah Psychotic",
+    image:"111.webp",
+    link:"111.webp",
+    saved:true
+  },
+  {
+    name:"Product 112",
+    caption:"Abdullah Psychotic",
+    image:"112.webp",
+    link:"112.webp",
+    saved:true
+  },
+  {
+    name:"Product 113",
+    caption:"Abdullah Psychotic",
+    image:"113.webp",
+    link:"113.webp",
+    saved:true
+  },
+  {
+    name:"Product 114",
+    caption:"Abdullah Psychotic",
+    image:"114.webp",
+    link:"114.webp",
+    saved:true
+  },
+  {
+    name:"Product 115",
+    caption:"Abdullah Psychotic",
+    image:"115.webp",
+    link:"115.webp",
+    saved:true
+  },
+  {
+    name:"Product 116",
+    caption:"Abdullah Psychotic",
+    image:"116.webp",
+    link:"116.webp",
+    saved:true
+  },
+  {
+    name:"Product 117",
+    caption:"Abdullah Psychotic",
+    image:"117.webp",
+    link:"117.webp",
+    saved:true
+  },
+  {
+    name:"Product 118",
+    caption:"Abdullah Psychotic",
+    image:"118.webp",
+    link:"118.webp",
+    saved:true
+  },
+  {
+    name:"Product 119",
+    caption:"Abdullah Psychotic",
+    image:"119.webp",
+    link:"119.webp",
+    saved:true
+  },
+  {
+    name:"Product 120",
+    caption:"Abdullah Psychotic",
+    image:"120.webp",
+    link:"120.webp",
+    saved:true
+  },
+  {
+    name:"Product 121",
+    caption:"Abdullah Psychotic",
+    image:"121.webp",
+    link:"121.webp",
+    saved:true
+  },
+  {
+    name:"Product 122",
+    caption:"Abdullah Psychotic",
+    image:"122.webp",
+    link:"122.webp",
+    saved:true
+  },
+  {
+    name:"Product 123",
+    caption:"Abdullah Psychotic",
+    image:"123.webp",
+    link:"123.webp",
+    saved:true
+  },
+  {
+    name:"Product 124",
+    caption:"Abdullah Psychotic",
+    image:"124.webp",
+    link:"124.webp",
+    saved:true
+  },
+  {
+    name:"Product 125",
+    caption:"Abdullah Psychotic",
+    image:"125.webp",
+    link:"125.webp",
+    saved:true
+  },
+  {
+    name:"Product 126",
+    caption:"Abdullah Psychotic",
+    image:"126.webp",
+    link:"126.webp",
+    saved:true
+  },
+  {
+    name:"Product 127",
+    caption:"Abdullah Psychotic",
+    image:"127.webp",
+    link:"127.webp",
+    saved:true
+  },
+  {
+    name:"Product 128",
+    caption:"Abdullah Psychotic",
+    image:"128.webp",
+    link:"128.webp",
+    saved:true
+  },
+  {
+    name:"Product 129",
+    caption:"Abdullah Psychotic",
+    image:"129.webp",
+    link:"129.webp",
+    saved:true
+  },
+  {
+    name:"Product 130",
+    caption:"Abdullah Psychotic",
+    image:"130.webp",
+    link:"130.webp",
+    saved:true
+  },
+  {
+    name:"Product 131",
+    caption:"Abdullah Psychotic",
+    image:"131.webp",
+    link:"131.webp",
+    saved:true
+  },
+  {
+    name:"Product 132",
+    caption:"Abdullah Psychotic",
+    image:"132.webp",
+    link:"132.webp",
+    saved:true
+  },
+  {
+    name:"Product 133",
+    caption:"Abdullah Psychotic",
+    image:"133.webp",
+    link:"133.webp",
+    saved:true
   }
-);
+];
 
-
-/* ELEMENTS */
 const grid = document.getElementById("collectionGrid");
 const count = document.getElementById("collectionCount");
-const filterButtons = document.querySelectorAll(
-  ".collection-nav button"
-);
+const filterButtons = document.querySelectorAll(".collection-nav button");
 
-
-/* CREATE ONE CARD */
 function createCollectionCard(item, index){
-
-  const number = index + 101;
-
   return `
     <article class="collection-card">
-
-      <a
-        href="${item.link}"
-        aria-label="Open ${item.name}"
-      >
-
+      <a href="${item.link}" aria-label="Open ${item.name}">
         <img
           src="${item.image}"
           alt="${item.name}"
           loading="${index < 6 ? "eager" : "lazy"}"
-          onerror="this.style.opacity='.25'"
+          onerror="this.onerror=null;this.src='https://picsum.photos/900/1200?random=${index+700}'"
         >
 
-        <span class="card-number">
-          ${number}
-        </span>
+        <span class="card-number">${String(index + 101).padStart(3,"0")}</span>
 
         <div class="card-info">
-
-          <div class="card-name">
-            ${item.name}
-          </div>
-
-          <div class="card-caption">
-            ${item.caption}
-          </div>
-
+          <div class="card-name">${item.name}</div>
+          <div class="card-caption">${item.caption}</div>
           <span class="card-link">
-            View design
-            <i class="fas fa-arrow-right"></i>
+            View design <i class="fas fa-arrow-right"></i>
           </span>
-
         </div>
-
       </a>
-
     </article>
   `;
 }
 
-
-/* RENDER COLLECTION */
-function renderCollection(mode = "all"){
-
-  const visibleItems =
-    mode === "saved"
-      ? collectionItems.filter(item => item.saved)
-      : collectionItems;
+function renderCollection(mode="all"){
+  const visibleItems = mode === "saved"
+    ? collectionItems.filter(item => item.saved)
+    : collectionItems;
 
   grid.innerHTML = visibleItems
-    .map((item, index) =>
-      createCollectionCard(item, index)
-    )
+    .map((item,index) => createCollectionCard(item,index))
     .join("");
 
   count.textContent =
-    `${visibleItems.length} designs · 101—133`;
+    `${visibleItems.length} ${visibleItems.length === 1 ? "design" : "designs"} · 101—133`;
 }
 
-
-/* COLLECTION BUTTONS */
 filterButtons.forEach(button => {
-
   button.addEventListener("click", () => {
-
-    filterButtons.forEach(btn => {
-      btn.classList.remove("active");
-    });
-
+    filterButtons.forEach(btn => btn.classList.remove("active"));
     button.classList.add("active");
-
     renderCollection(button.dataset.filter);
-
   });
-
 });
-
 
 /* FOLLOW BUTTON */
 const followBtn = document.getElementById("followBtn");
-
 let followed = false;
 
 followBtn.addEventListener("click", () => {
-
   followed = !followed;
-
-  followBtn.textContent =
-    followed
-      ? "Following"
-      : "Follow";
-
+  followBtn.textContent = followed ? "Following" : "Follow";
 });
 
-
-/* START PAGE 4 */
+/* START WITH ALL 33 PAGE-4 DESIGNS — NUMBERED 101 TO 133 */
 renderCollection("all");
-
 </script>
 
 </body>
